@@ -7,6 +7,21 @@ module.exports = function (grunt) {
       build: ['./build'],
       tmp: ['./tmp']
     },
+    copy: {
+      skins: {
+        files: [
+          {
+            expand: true,
+            // Assumes your skin source is in 'src/skins/'
+            // Change this path if your source is different (e.g. './src/')
+            cwd: './src/less/skins/',
+            src: ['**/vars.css'], // finds vars.css in any subfolder
+            // This will be the destination inside your build folder
+            dest: './build/skins/'
+          }
+        ]
+      }
+    },
     stylelint: {
       css: {
         options: {
