@@ -8,14 +8,14 @@
 @accessibility-box-shadow-width: 99999px;
 @accessibility-box-shadow-z-index: 1;
 
-@accessibility-issue-info-selection-color: if(@content-ui-darkmode = true, mix(@color-white, @color-tint, @accessibility-overlay-opacity-60), @color-tint);
-@accessibility-issue-info-selection-background-color: mix(@background-color, @color-tint, @accessibility-overlay-opacity-90);
+@accessibility-issue-info-selection-color: var(--tm-accessibility-issue-info-selection-color);
+@accessibility-issue-info-selection-background-color: var(--tm-accessibility-issue-info-selection-bg);
 
-@accessibility-issue-warn-selection-color: if(@content-ui-darkmode = true, mix(@color-white, @color-warning, @accessibility-overlay-opacity-60), @color-warning);
-@accessibility-issue-warn-selection-background-color: mix(@background-color, @color-warning, @accessibility-overlay-opacity-90);
+@accessibility-issue-warn-selection-color: var(--tm-accessibility-issue-warn-selection-color);
+@accessibility-issue-warn-selection-background-color: var(--tm-accessibility-issue-warn-selection-bg);
 
-@accessibility-issue-error-selection-color: if(@content-ui-darkmode = true, mix(@color-white, @color-error, @accessibility-overlay-opacity-60), @color-error);
-@accessibility-issue-error-selection-background-color: mix(@background-color, @color-error, @accessibility-overlay-opacity-90);
+@accessibility-issue-error-selection-color: var(--tm-accessibility-issue-error-selection-color);
+@accessibility-issue-error-selection-background-color: var(--tm-accessibility-issue-error-selection-bg);
 
 [data-ephox-foam-a11y-violation] {
   outline: 2px solid;

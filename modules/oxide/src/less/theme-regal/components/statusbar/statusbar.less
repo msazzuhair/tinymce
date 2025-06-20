@@ -10,13 +10,13 @@
 @statusbar-text-height: 16px;
 @statusbar-padding-x: @pad-sm;
 @statusbar-separator-color: @tinymce-separator-color;
-@statusbar-text-color: contrast(@statusbar-background-color, @text-color-muted, fade(@color-white, 75));
+@statusbar-text-color: var(--tm-statusbar-text-color);
 @statusbar-focus-text-color: @text-color;
 @statusbar-text-transform: none;
 @statusbar-not-disabled-selector: ~'&:not(:disabled):not([aria-disabled=true])';
-@statusbar-logo-color: fade(@text-color, 80);
+@statusbar-logo-color: var(--tm-statusbar-logo-color);
 @statusbar-logo-active-color: @text-color;
-@statusbar-resize-handle-color: fade(@text-color, 50);
+@statusbar-resize-handle-color: var(--tm-statusbar-resize-handle-color);
 @statusbar-resize-handle-radius: @tinymce-border-radius - @tinymce-border-width - 3px; // Minus handle padding
 
 .tox {

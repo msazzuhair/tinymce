@@ -1,0 +1,476 @@
+:root {
+    /* Variables from: ./globals */
+    --tm-background-color: var(--p-surface-0);
+    --tm-black-color: var(--p-surface-950);
+    --tm-border-color: var(--p-surface-300);
+    --tm-color-active: var(--p-primary-500);
+    --tm-color-error: var(--color-red-500);
+    --tm-color-success: var(--color-green-500);
+    --tm-color-tint: var(--p-primary-50);
+    --tm-color-warning: var(--color-orange-500);
+    --tm-color-white: var(--p-surface-0);
+    --tmn-color-error-element-focus-color: var(--color-red-600);
+    --tm-separator-color: var(--p-surface-200);
+    --tm-text-color: var(--p-surface-900);
+    --tm-text-color-muted: var(--p-surface-500);
+
+    /* Variables from: ./components/accessibility-checker */
+    --tm-accessibility-issue-body-text-color: var(--p-surface-800);
+    --tm-accessibility-issue-error-bg: var(--color-red-50);
+    --tm-accessibility-issue-error-heading-text-color: var(--color-red-800);
+    --tm-accessibility-issue-info-bg: var(--color-blue-50);
+    --tm-accessibility-issue-info-heading-text-color: var(--color-blue-800);
+    --tm-accessibility-issue-success-bg: var(--color-green-50);
+    --tm-accessibility-issue-success-heading-text-color: var(--color-green-800);
+    --tm-accessibility-issue-warn-bg: var(--color-orange-50);
+    --tm-accessibility-issue-warn-heading-text-color: var(--color-orange-800);
+
+    /* Variables from: ./components/button */
+    --tm-button-active-bg: var(--p-primary-600);
+    --tm-button-disabled-text-color: var(--p-surface-400);
+    --tm-button-enabled-active-bg: var(--p-primary-600);
+    --tm-button-enabled-bg: var(--p-primary-500);
+    --tm-button-enabled-hover-bg: var(--p-primary-600);
+    --tm-button-hover-bg: var(--p-primary-600);
+    --tm-button-naked-active-bg: var(--p-surface-200);
+    --tm-button-naked-disabled-icon-color: var(--p-surface-400);
+    --tm-button-naked-hover-bg: var(--p-surface-100);
+    --tm-button-secondary-active-bg: var(--p-surface-200);
+    --tm-button-secondary-enabled-active-bg: var(--p-surface-200);
+    --tm-button-secondary-enabled-hover-bg: var(--p-surface-100);
+    --tm-button-secondary-hover-bg: var(--p-surface-100);
+    --tm-button-text-color: var(--p-surface-0);
+
+    /* Variables from: ./components/checkbox */
+    --tm-checkbox-disabled-text-color: var(--p-surface-400);
+    --tm-checkbox-unselected-color: var(--p-surface-400);
+
+    /* Variables from: ./components/collection */
+    --tm-collection-grid-item-label-active-text-color: var(--p-primary-500);
+    --tm-collection-grid-item-label-enabled-text-color: var(--p-surface-800);
+    --tm-collection-group-label-bg: var(--p-surface-100);
+    --tm-collection-group-label-text-color: var(--p-surface-900);
+    --tm-collection-item-caret-disabled-text-color: var(--p-surface-400);
+    --tm-collection-item-label-disabled-text-color: var(--p-surface-400);
+    --tm-collection-list-item-label-active-text-color: var(--p-primary-500);
+    --tm-collection-list-item-label-enabled-text-color: var(--p-surface-800);
+    --tm-collection-toolbar-item-label-active-hover-text-color: var(--p-primary-600);
+    --tm-collection-toolbar-item-label-active-text-color: var(--p-primary-500);
+    --tm-collection-toolbar-item-label-enabled-text-color: var(--p-surface-800);
+
+    /* Variables from: ./components/color-picker */
+    --tm-cp-warning-frame-bg: var(--color-orange-50);
+    --tm-cp-warning-frame-border-color: var(--color-orange-200);
+    --tm-cp-warning-frame-text-color: var(--color-orange-800);
+
+    /* Variables from: ./components/comments */
+    --tm-comment-bg-start: var(--p-surface-50);
+    --tm-comment-box-shadow-color: rgba(0, 0, 0, 0.1);
+    --tm-comment-selected-bg: var(--p-primary-50);
+
+    /* Variables from: ./components/dialog */
+    --tm-dialog-backdrop-bg: rgba(0, 0, 0, 0.4);
+    --tm-dialog-bg: var(--p-surface-0);
+    --tm-dialog-link-active-color: var(--p-primary-600);
+    --tm-dialog-link-color: var(--p-primary-500);
+    --tm-dialog-link-hover-color: var(--p-primary-600);
+    --tm-dialog-nav-focus-bg: var(--p-surface-100);
+    --tm-dialog-shadow-color: rgba(0, 0, 0, 0.1);
+    --tm-dialog-table-border-color: var(--p-surface-200);
+
+    /* Variables from: ./components/editor */
+    --tm-header-separator-color: var(--p-surface-200);
+    --tm-header-shadow-color-end: rgba(0, 0, 0, 0);
+    --tm-header-shadow-color-start: rgba(0, 0, 0, 0.075);
+    --tm-header-sticky-bg: var(--p-surface-0);
+    --tm-header-sticky-shadow-color-end: rgba(0, 0, 0, 0);
+    --tm-header-sticky-shadow-color-start: rgba(0, 0, 0, 0.075);
+
+    /* Variables from: ./components/form */
+    --tm-color-black: var(--p-surface-950);
+    --tm-color-input-swatch-checker-color: var(--p-surface-300);
+    --tm-listbox-button-chevron-color: var(--p-surface-600);
+    --tm-listbox-disabled-bg: var(--p-surface-100);
+    --tm-listbox-disabled-text-color: var(--p-surface-400);
+    --tm-selectbox-disabled-bg: var(--p-surface-100);
+    --tm-selectbox-disabled-text-color: var(--p-surface-400);
+    --tm-textfield-bg: var(--p-surface-0);
+    --tm-textfield-disabled-bg: var(--p-surface-100);
+    --tm-textfield-disabled-text-color: var(--p-surface-400);
+
+    /* Variables from: ./components/insert-table-picker */
+    --tm-insert-table-picker-label-color: var(--p-surface-500);
+
+    /* Variables from: ./components/menu */
+    --tm-menu-bg: var(--p-surface-0);
+    --tm-menu-shadow-color-end: rgba(0, 0, 0, 0);
+    --tm-menu-shadow-color-start: rgba(0, 0, 0, 0.1);
+
+    /* Variables from: ./components/menubar */
+    --tm-menubar-select-disabled-text-color: var(--p-surface-400);
+
+    /* Variables from: ./components/notification */
+    --tm-notification-error-bg: var(--color-red-50);
+    --tm-notification-error-border-color: var(--color-red-200);
+    --tm-notification-error-link-active-color: var(--color-red-800);
+    --tm-notification-error-link-color: var(--color-red-700);
+    --tm-notification-error-link-hover-color: var(--color-red-800);
+    --tm-notification-info-bg: var(--color-blue-50);
+    --tm-notification-info-border-color: var(--color-blue-200);
+    --tm-notification-info-link-active-color: var(--p-primary-600);
+    --tm-notification-info-link-color: var(--p-primary-500);
+    --tm-notification-info-link-hover-color: var(--p-primary-600);
+    --tm-notification-success-bg: var(--color-green-50);
+    --tm-notification-success-border-color: var(--color-green-200);
+    --tm-notification-success-link-active-color: var(--color-green-800);
+    --tm-notification-success-link-color: var(--color-green-700);
+    --tm-notification-success-link-hover-color: var(--color-green-800);
+    --tm-notification-warn-bg: var(--color-orange-50);
+    --tm-notification-warn-border-color: var(--color-orange-200);
+    --tm-notification-warn-link-active-color: var(--color-orange-800);
+    --tm-notification-warn-link-color: var(--color-orange-700);
+    --tm-notification-warn-link-hover-color: var(--color-orange-800);
+    --tm-notification-warn-text-color: var(--color-orange-900);
+
+    /* Variables from: ./components/onboarding */
+    --tm-onboarding-footer-bg: var(--p-surface-100);
+    --tm-onboarding-overlay-bg: rgba(0, 0, 0, 0.4);
+    --tm-onboarding-promotion-button-bg: var(--p-primary-500);
+    --tm-onboarding-promotion-button-text-color: var(--p-surface-0);
+    --tm-onboarding-promotion-footer-bg: var(--p-surface-0);
+    --tm-onboarding-promotion-icon-bg-end: var(--p-primary-200);
+
+    /* Variables from: ./components/pop */
+    --tm-pop-shadow-color-end: rgba(0, 0, 0, 0);
+    --tm-pop-shadow-color-start: rgba(0, 0, 0, 0.1);
+
+    /* Variables from: ./components/revisionhistory */
+    --tm-rh-border-color: var(--p-surface-300);
+    --tm-rh-border-color--focused: var(--p-primary-500);
+    --tm-rh-border-color--selected: var(--p-primary-500);
+    --tm-rh-card-active-bg: var(--p-primary-50);
+    --tm-rh-secondary-color: var(--p-surface-500);
+    --tm-rh-sidebar-bg: var(--p-surface-50);
+
+    /* Variables from: ./components/sidebar */
+    --tm-sidebar-bg: var(--p-surface-50);
+
+    /* Variables from: ./components/slider */
+    --tm-slider-handle-border-color: var(--p-primary-500);
+    --tm-slider-thumb-active-bg: var(--p-primary-600);
+    --tm-slider-thumb-disabled-bg: var(--p-surface-400);
+    --tm-slider-thumb-focus-bg: var(--p-primary-500);
+    --tm-slider-thumb-hover-bg: var(--p-primary-400);
+
+    /* Variables from: ./components/statusbar */
+    --tm-statusbar-logo-color: var(--p-surface-500);
+    --tm-statusbar-resize-handle-color: var(--p-surface-400);
+    --tm-statusbar-text-color: var(--p-surface-600);
+
+    /* Variables from: ./components/suggestededits */
+    --tm-se-button-hover-bg: var(--p-surface-100);
+    --tm-se-dark-transparent-color: rgba(0, 0, 0, 0.5);
+    --tm-se-sidebar-bg: var(--p-surface-50);
+
+    /* Variables from: ./components/throbber */
+    --tm-throbber-busy-bg: var(--p-primary-500);
+
+    /* Variables from: ./components/toolbar-button */
+    --tm-toolbar-button-bespoke-bg: var(--p-surface-100);
+    --tm-toolbar-button-chevron-color: var(--p-surface-600);
+    --tm-toolbar-button-disabled-icon-color: var(--p-surface-400);
+    --tm-toolbar-button-disabled-text-color: var(--p-surface-400);
+    --tm-toolbar-button-enabled-bg: transparent;
+    --tm-toolbar-button-hover-bg: var(--p-surface-100);
+    --tm-toolbar-button-icon-color: var(--p-surface-600);
+    --tm-toolbar-button-text-color: var(--p-surface-800);
+
+    /* Variables from: ./components/tree */
+    --tm-tree-button-chevron-color: var(--p-surface-600);
+    --tm-tree-button-disabled-icon-color: var(--p-surface-400);
+    --tm-tree-button-disabled-text-color: var(--p-surface-400);
+    --tm-tree-button-enabled-bg: transparent;
+    --tm-tree-button-icon-color: var(--p-surface-600);
+    --tm-tree-button-menu-icon-color: var(--p-surface-600);
+    --tm-tree-button-text-color: var(--p-surface-800);
+
+    /* Variables from: ./content/accessibility-checker */
+    --tm-accessibility-issue-error-selection-bg: var(--color-red-200);
+    --tm-accessibility-issue-error-selection-color: var(--p-surface-950);
+    --tm-accessibility-issue-info-selection-bg: var(--color-blue-200);
+    --tm-accessibility-issue-info-selection-color: var(--p-surface-950);
+    --tm-accessibility-issue-warn-selection-bg: var(--color-orange-200);
+    --tm-accessibility-issue-warn-selection-color: var(--p-surface-950);
+
+    /* Variables from: ./content/comments */
+    --tm-doc-comment-active-bg: var(--color-yellow-100);
+    /* Using a distinct color like yellow for comments */
+    --tm-doc-comment-color: var(--color-yellow-500);
+
+    /* Variables from: ./content/mergetags */
+    --tm-mergetag-hover-bg: var(--p-surface-100);
+
+    /* Variables from: ./content/suggestededits */
+    --tm-added-bg: var(--color-green-100);
+    --tm-modified-bg: var(--color-orange-100);
+    --tm-removed-bg: var(--color-red-100);
+
+    /* Variables from: ./content/uploadcare */
+    --tm-uploadcare-placeholder-border-color: var(--p-surface-300);
+
+    /* --- Light Theme Mapping --- */
+    --theme-bg: var(--p-surface-0);
+    /* Main page background */
+    --theme-bg-subtle: var(--p-surface-100);
+    /* For elements like code blocks */
+    --theme-text-primary: var(--p-surface-900);
+    /* Primary, high-contrast text */
+    --theme-text-code: var(--p-surface-800);
+    /* Text on subtle backgrounds */
+    --theme-text-muted: var(--p-surface-500);
+    /* Secondary, muted text */
+    --theme-border: var(--p-surface-300);
+    /* Standard borders and lines */
+
+    /* Tell the browser that this element prefers a light color scheme. */
+    color-scheme: light;
+}
+
+.dark {
+    /* Main Variables from: ./globals */
+    --tm-background-color: var(--p-surface-900);
+    --tm-black-color: var(--p-surface-50);
+    --tm-border-color: var(--p-surface-700);
+    --tm-color-active: var(--p-primary-400);
+    --tm-color-error: var(--color-red-400);
+    --tm-color-success: var(--color-green-400);
+    --tm-color-tint: var(--p-primary-500);
+    /* Tint becomes a darker shade in dark mode */
+    --tm-color-warning: var(--color-orange-400);
+    --tm-color-white: var(--p-surface-950);
+    --tmn-color-error-element-focus-color: var(--color-red-300);
+    --tm-separator-color: var(--p-surface-800);
+    --tm-text-color: var(--p-surface-100);
+    --tm-text-color-muted: var(--p-surface-400);
+
+    /* Variables from: ./components/accessibility-checker */
+    --tm-accessibility-issue-body-text-color: var(--p-surface-300);
+    --tm-accessibility-issue-error-bg: var(--color-red-900);
+    --tm-accessibility-issue-error-heading-text-color: var(--color-red-300);
+    --tm-accessibility-issue-info-bg: var(--color-blue-900);
+    --tm-accessibility-issue-info-heading-text-color: var(--color-blue-300);
+    --tm-accessibility-issue-success-bg: var(--color-green-900);
+    --tm-accessibility-issue-success-heading-text-color: var(--color-green-300);
+    --tm-accessibility-issue-warn-bg: var(--color-orange-900);
+    --tm-accessibility-issue-warn-heading-text-color: var(--color-orange-300);
+
+    /* Variables from: ./components/button */
+    --tm-button-active-bg: var(--p-primary-600);
+    --tm-button-disabled-text-color: var(--p-surface-600);
+    --tm-button-enabled-active-bg: var(--p-primary-600);
+    --tm-button-enabled-bg: var(--p-primary-500);
+    --tm-button-enabled-hover-bg: var(--p-primary-400);
+    --tm-button-hover-bg: var(--p-primary-400);
+    --tm-button-naked-active-bg: var(--p-surface-700);
+    --tm-button-naked-disabled-icon-color: var(--p-surface-600);
+    --tm-button-naked-hover-bg: var(--p-surface-800);
+    --tm-button-secondary-active-bg: var(--p-surface-700);
+    --tm-button-secondary-enabled-active-bg: var(--p-surface-700);
+    --tm-button-secondary-enabled-hover-bg: var(--p-surface-600);
+    --tm-button-secondary-hover-bg: var(--p-surface-600);
+    --tm-button-text-color: var(--p-surface-0);
+
+    /* Variables from: ./components/checkbox */
+    --tm-checkbox-disabled-text-color: var(--p-surface-600);
+    --tm-checkbox-unselected-color: var(--p-surface-500);
+
+    /* Variables from: ./components/collection */
+    --tm-collection-grid-item-label-active-text-color: var(--p-primary-300);
+    --tm-collection-grid-item-label-enabled-text-color: var(--p-surface-200);
+    --tm-collection-group-label-bg: var(--p-surface-800);
+    --tm-collection-group-label-text-color: var(--p-surface-100);
+    --tm-collection-item-caret-disabled-text-color: var(--p-surface-600);
+    --tm-collection-item-label-disabled-text-color: var(--p-surface-600);
+    --tm-collection-list-item-label-active-text-color: var(--p-primary-300);
+    --tm-collection-list-item-label-enabled-text-color: var(--p-surface-200);
+    --tm-collection-toolbar-item-label-active-hover-text-color: var(--p-primary-200);
+    --tm-collection-toolbar-item-label-active-text-color: var(--p-primary-300);
+    --tm-collection-toolbar-item-label-enabled-text-color: var(--p-surface-200);
+
+    /* Variables from: ./components/color-picker */
+    --tm-cp-warning-frame-bg: var(--color-orange-900);
+    --tm-cp-warning-frame-border-color: var(--color-orange-700);
+    --tm-cp-warning-frame-text-color: var(--color-orange-300);
+
+    /* Variables from: ./components/comments */
+    --tm-comment-bg-start: var(--p-surface-800);
+    --tm-comment-box-shadow-color: rgba(0, 0, 0, 0.2);
+    --tm-comment-selected-bg: var(--p-primary-900);
+
+    /* Variables from: ./components/dialog */
+    --tm-dialog-backdrop-bg: rgba(0, 0, 0, 0.6);
+    --tm-dialog-bg: var(--p-surface-800);
+    --tm-dialog-link-active-color: var(--p-primary-300);
+    --tm-dialog-link-color: var(--p-primary-400);
+    --tm-dialog-link-hover-color: var(--p-primary-300);
+    --tm-dialog-nav-focus-bg: var(--p-surface-700);
+    --tm-dialog-shadow-color: rgba(0, 0, 0, 0.2);
+    --tm-dialog-table-border-color: var(--p-surface-700);
+
+    /* Variables from: ./components/editor */
+    --tm-header-separator-color: var(--p-surface-800);
+    --tm-header-shadow-color-end: rgba(0, 0, 0, 0);
+    --tm-header-shadow-color-start: rgba(0, 0, 0, 0.25);
+    --tm-header-sticky-bg: var(--p-surface-800);
+    --tm-header-sticky-shadow-color-end: rgba(0, 0, 0, 0);
+    --tm-header-sticky-shadow-color-start: rgba(0, 0, 0, 0.25);
+
+    /* Variables from: ./components/form */
+    --tm-color-black: var(--p-surface-50);
+    --tm-color-input-swatch-checker-color: var(--p-surface-700);
+    --tm-listbox-button-chevron-color: var(--p-surface-300);
+    --tm-listbox-disabled-bg: var(--p-surface-700);
+    --tm-listbox-disabled-text-color: var(--p-surface-500);
+    --tm-selectbox-disabled-bg: var(--p-surface-700);
+    --tm-selectbox-disabled-text-color: var(--p-surface-500);
+    --tm-textfield-bg: var(--p-surface-800);
+    --tm-textfield-disabled-bg: var(--p-surface-700);
+    --tm-textfield-disabled-text-color: var(--p-surface-500);
+
+    /* Variables from: ./components/insert-table-picker */
+    --tm-insert-table-picker-label-color: var(--p-surface-400);
+
+    /* Variables from: ./components/menu */
+    --tm-menu-bg: var(--p-surface-800);
+    --tm-menu-shadow-color-end: rgba(0, 0, 0, 0);
+    --tm-menu-shadow-color-start: rgba(0, 0, 0, 0.25);
+
+    /* Variables from: ./components/menubar */
+    --tm-menubar-select-disabled-text-color: var(--p-surface-600);
+
+    /* Variables from: ./components/notification */
+    --tm-notification-error-bg: var(--color-red-900);
+    --tm-notification-error-border-color: var(--color-red-700);
+    --tm-notification-error-link-active-color: var(--color-red-300);
+    --tm-notification-error-link-color: var(--color-red-400);
+    --tm-notification-error-link-hover-color: var(--color-red-300);
+    --tm-notification-info-bg: var(--color-blue-900);
+    --tm-notification-info-border-color: var(--color-blue-700);
+    --tm-notification-info-link-active-color: var(--p-primary-300);
+    --tm-notification-info-link-color: var(--p-primary-400);
+    --tm-notification-info-link-hover-color: var(--p-primary-300);
+    --tm-notification-success-bg: var(--color-green-900);
+    --tm-notification-success-border-color: var(--color-green-700);
+    --tm-notification-success-link-active-color: var(--color-green-300);
+    --tm-notification-success-link-color: var(--color-green-400);
+    --tm-notification-success-link-hover-color: var(--color-green-300);
+    --tm-notification-warn-bg: var(--color-orange-900);
+    --tm-notification-warn-border-color: var(--color-orange-700);
+    --tm-notification-warn-link-active-color: var(--color-orange-300);
+    --tm-notification-warn-link-color: var(--color-orange-400);
+    --tm-notification-warn-link-hover-color: var(--color-orange-300);
+    --tm-notification-warn-text-color: var(--color-orange-200);
+
+    /* Variables from: ./components/onboarding */
+    --tm-onboarding-footer-bg: var(--p-surface-800);
+    --tm-onboarding-overlay-bg: rgba(0, 0, 0, 0.6);
+    --tm-onboarding-promotion-button-bg: var(--p-primary-400);
+    --tm-onboarding-promotion-button-text-color: var(--p-surface-950);
+    --tm-onboarding-promotion-footer-bg: var(--p-surface-800);
+    --tm-onboarding-promotion-icon-bg-end: var(--p-primary-800);
+
+    /* Variables from: ./components/pop */
+    --tm-pop-shadow-color-end: rgba(0, 0, 0, 0);
+    --tm-pop-shadow-color-start: rgba(0, 0, 0, 0.25);
+
+    /* Variables from: ./components/revisionhistory */
+    --tm-rh-border-color: var(--p-surface-700);
+    --tm-rh-border-color--focused: var(--p-primary-400);
+    --tm-rh-border-color--selected: var(--p-primary-400);
+    --tm-rh-card-active-bg: var(--p-primary-900);
+    --tm-rh-secondary-color: var(--p-surface-400);
+    --tm-rh-sidebar-bg: var(--p-surface-900);
+
+    /* Variables from: ./components/sidebar */
+    --tm-sidebar-bg: var(--p-surface-800);
+
+    /* Variables from: ./components/slider */
+    --tm-slider-handle-border-color: var(--p-primary-400);
+    --tm-slider-thumb-active-bg: var(--p-primary-300);
+    --tm-slider-thumb-disabled-bg: var(--p-surface-600);
+    --tm-slider-thumb-focus-bg: var(--p-primary-400);
+    --tm-slider-thumb-hover-bg: var(--p-primary-500);
+
+    /* Variables from: ./components/statusbar */
+    --tm-statusbar-logo-color: var(--p-surface-500);
+    --tm-statusbar-resize-handle-color: var(--p-surface-600);
+    --tm-statusbar-text-color: var(--p-surface-400);
+
+    /* Variables from: ./components/suggestededits */
+    --tm-se-button-hover-bg: var(--p-surface-700);
+    --tm-se-dark-transparent-color: rgba(0, 0, 0, 0.7);
+    --tm-se-sidebar-bg: var(--p-surface-800);
+
+    /* Variables from: ./components/throbber */
+    --tm-throbber-busy-bg: var(--p-primary-400);
+
+    /* Variables from: ./components/toolbar-button */
+    --tm-toolbar-button-bespoke-bg: var(--p-surface-700);
+    --tm-toolbar-button-chevron-color: var(--p-surface-400);
+    --tm-toolbar-button-disabled-icon-color: var(--p-surface-600);
+    --tm-toolbar-button-disabled-text-color: var(--p-surface-600);
+    --tm-toolbar-button-enabled-bg: transparent;
+    --tm-toolbar-button-hover-bg: var(--p-surface-700);
+    --tm-toolbar-button-icon-color: var(--p-surface-300);
+    --tm-toolbar-button-text-color: var(--p-surface-200);
+
+    /* Variables from: ./components/tree */
+    --tm-tree-button-chevron-color: var(--p-surface-400);
+    --tm-tree-button-disabled-icon-color: var(--p-surface-600);
+    --tm-tree-button-disabled-text-color: var(--p-surface-600);
+    --tm-tree-button-enabled-bg: transparent;
+    --tm-tree-button-icon-color: var(--p-surface-300);
+    --tm-tree-button-menu-icon-color: var(--p-surface-300);
+    --tm-tree-button-text-color: var(--p-surface-200);
+
+    /* Variables from: ./content/accessibility-checker */
+    --tm-accessibility-issue-error-selection-bg: var(--color-red-700);
+    --tm-accessibility-issue-error-selection-color: var(--p-surface-50);
+    --tm-accessibility-issue-info-selection-bg: var(--color-blue-700);
+    --tm-accessibility-issue-info-selection-color: var(--p-surface-50);
+    --tm-accessibility-issue-warn-selection-bg: var(--color-orange-700);
+    --tm-accessibility-issue-warn-selection-color: var(--p-surface-50);
+
+    /* Variables from: ./content/comments */
+    /* Using a subtle RGBA background for comments in dark mode works well */
+    --tm-doc-comment-active-bg: rgba(252, 211, 77, 0.2);
+    /* Based on Tailwind yellow-400 */
+    --tm-doc-comment-color: var(--color-yellow-400);
+
+    /* Variables from: ./content/mergetags */
+    --tm-mergetag-hover-bg: var(--p-surface-700);
+
+    /* Variables from: ./content/suggestededits */
+    /* Using subtle RGBA values for diffs provides better visibility in dark mode */
+    --tm-added-bg: ~"rgb(var(--color-green-400) / 0.15)";
+    /* Based on green-400 */
+    --tm-modified-bg: ~"rgb(var(--color-orange-400) / 0.15)";
+    /* Based on orange-400 */
+    --tm-removed-bg: ~"rgb(var(--color-red-400) / 0.15)";
+    /* Based on red-400 */
+
+    /* Variables from: ./content/uploadcare */
+    --tm-uploadcare-placeholder-border-color: var(--p-surface-600);
+
+    /* --- Dark Theme Mapping --- */
+    /* Note: The variable names are identical to :root, but the values are changed. */
+    --theme-bg: var(--p-surface-900);
+    --theme-bg-subtle: var(--p-surface-800);
+    --theme-text-primary: var(--p-surface-100);
+    --theme-text-code: var(--p-surface-200);
+    --theme-text-muted: var(--p-surface-400);
+    --theme-border: var(--p-surface-700);
+
+    /* Tell the browser that this element prefers a dark color scheme. */
+    color-scheme: dark;
+}

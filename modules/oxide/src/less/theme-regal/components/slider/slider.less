@@ -4,7 +4,7 @@
 
 @slider-handle-background-color: @color-tint;
 @slider-handle-border-radius: @control-border-radius;
-@slider-handle-border: 2px solid darken(@slider-handle-background-color, 10%);
+@slider-handle-border: 2px solid var(--tm-slider-handle-border-color);
 @slider-handle-box-shadow: none;
 @slider-handle-height: 24px;
 @slider-handle-width: 14px;
@@ -17,10 +17,10 @@
 @slider-width: 130px;
 
 @slider-thumb-background-color: @color-tint;
-@slider-thumb-background-color-disabled: fade(contrast(@slider-thumb-background-color, @color-black, @color-white), 50%);
-@slider-thumb-background-color-hover: darken(@slider-thumb-background-color, 5%);
-@slider-thumb-background-color-active: darken(@slider-thumb-background-color, 10%);
-@slider-thumb-background-color-focus: darken(@slider-thumb-background-color, 5%);
+@slider-thumb-background-color-disabled: var(--tm-slider-thumb-disabled-bg);
+@slider-thumb-background-color-hover: var(--tm-slider-thumb-hover-bg);
+@slider-thumb-background-color-active: var(--tm-slider-thumb-active-bg);
+@slider-thumb-background-color-focus: var(--tm-slider-thumb-focus-bg);
 @slider-thumb-focus-outline: inset 0 0 0 1px @color-white, 0 0 0 2px @color-tint;
 
 @slider-thumb-border-radius: @slider-thumb-width;

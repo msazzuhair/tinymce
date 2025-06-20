@@ -1,6 +1,6 @@
-@onboarding-overlay-background-color: darken(@background-color, 6%);
+@onboarding-overlay-background-color: var(--tm-onboarding-overlay-bg);
 @onboarding-dialog-background-color: @background-color;
-@onboarding-footer-background-color: contrast(@background-color, darken(@background-color, 6%), lighten(@background-color, 5%));
+@onboarding-footer-background-color: var(--tm-onboarding-footer-bg);
 
 @onboarding-dialog-width: 512px;
 @onboarding-dialog-border-radius: 12px;
@@ -12,13 +12,13 @@
 @onboarding-promotion-icon-container-size: 56px;
 @onboarding-promotion-icon-size-border-radius: 12px; 
 
-@onboarding-promotion-icon-background: linear-gradient(180deg, @dialog-background-color 24%, darken(@dialog-background-color, 6%) 100%);
+@onboarding-promotion-icon-background: linear-gradient(180deg, @dialog-background-color 24%, var(--tm-onboarding-promotion-icon-bg-end) 100%);
 
 @onboarding-promotion-icon-box-shadow: 0px 1px 1px 0px #222f3e12, 0px 3px 6px 0px #222f3e06;
-@onboarding-promotion-footer-background-color: darken(@background-color, 6%);
+@onboarding-promotion-footer-background-color: var(--tm-onboarding-promotion-footer-bg);
 
-@onboarding-promotion-button-background-color: .bg-luma-checker(#F1EBF9, #55367A)[@result];
-@onboarding-promotion-button-text-color:  .bg-luma-checker(#851AFF, #C290FB)[@result];
+@onboarding-promotion-button-background-color: var(--tm-onboarding-promotion-button-bg);
+@onboarding-promotion-button-text-color:  var(--tm-onboarding-promotion-button-text-color);
 
 .tox {
   .tox-onboarding-overlay {

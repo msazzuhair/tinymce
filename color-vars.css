@@ -1,0 +1,219 @@
+:root {
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/accessibility-checker */
+    --tm-accessibility-issue-body-text-color: /* Add value here */;
+    --tm-accessibility-issue-error-background-color: /* Add value here */;
+    --tm-accessibility-issue-error-heading-text-color: /* Add value here */;
+    --tm-accessibility-issue-info-background-color: /* Add value here */;
+    --tm-accessibility-issue-info-heading-text-color: /* Add value here */;
+    --tm-accessibility-issue-success-background-color: /* Add value here */;
+    --tm-accessibility-issue-success-heading-text-color: /* Add value here */;
+    --tm-accessibility-issue-warn-background-color: /* Add value here */;
+    --tm-accessibility-issue-warn-heading-text-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/button */
+    --tm-button-active-background-color: /* Add value here */;
+    --tm-button-disabled-text-color: /* Add value here */;
+    --tm-button-enabled-active-background-color: /* Add value here */;
+    --tm-button-enabled-background-color: /* Add value here */;
+    --tm-button-enabled-hover-background-color: /* Add value here */;
+    --tm-button-hover-background-color: /* Add value here */;
+    --tm-button-naked-active-background-color: /* Add value here */;
+    --tm-button-naked-disabled-icon-color: /* Add value here */;
+    --tm-button-naked-hover-background-color: /* Add value here */;
+    --tm-button-secondary-active-background-color: /* Add value here */;
+    --tm-button-secondary-enabled-active-background-color: /* Add value here */;
+    --tm-button-secondary-enabled-hover-background-color: /* Add value here */;
+    --tm-button-secondary-hover-background-color: /* Add value here */;
+    --tm-button-text-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/checkbox */
+    --tm-checkbox-disabled-text-color: /* Add value here */;
+    --tm-checkbox-unselected-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/collection */
+    --tm-collection-grid-item-label-active-text-color: /* Add value here */;
+    --tm-collection-grid-item-label-enabled-text-color: /* Add value here */;
+    --tm-collection-group-label-background-color: /* Add value here */;
+    --tm-collection-group-label-text-color: /* Add value here */;
+    --tm-collection-item-caret-disabled-text-color: /* Add value here */;
+    --tm-collection-item-label-disabled-text-color: /* Add value here */;
+    --tm-collection-list-item-label-active-text-color: /* Add value here */;
+    --tm-collection-list-item-label-enabled-text-color: /* Add value here */;
+    --tm-collection-toolbar-item-label-active-hover-text-color: /* Add value here */;
+    --tm-collection-toolbar-item-label-active-text-color: /* Add value here */;
+    --tm-collection-toolbar-item-label-enabled-text-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/color-picker */
+    --tm-cp-warning-frame-background-color: /* Add value here */;
+    --tm-cp-warning-frame-border-color: /* Add value here */;
+    --tm-cp-warning-frame-text-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/comments */
+    --tm-comment-bg-start: /* Add value here */;
+    --tm-comment-box-shadow-color: /* Add value here */;
+    --tm-comment-selected-background-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/dialog */
+    --tm-dialog-backdrop-bg: /* Add value here */;
+    --tm-dialog-bg: /* Add value here */;
+    --tm-dialog-link-active-color: /* Add value here */;
+    --tm-dialog-link-color: /* Add value here */;
+    --tm-dialog-link-hover-color: /* Add value here */;
+    --tm-dialog-nav-focus-bg: /* Add value here */;
+    --tm-dialog-shadow-color: /* Add value here */;
+    --tm-dialog-table-border-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/editor */
+    --tm-header-separator-color: /* Add value here */;
+    --tm-header-shadow-color-end: /* Add value here */;
+    --tm-header-shadow-color-start: /* Add value here */;
+    --tm-header-sticky-bg: /* Add value here */;
+    --tm-header-sticky-shadow-color-end: /* Add value here */;
+    --tm-header-sticky-shadow-color-start: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/form */
+    --tm-color-black: /* Add value here */;
+    --tm-color-input-swatch-checker-color: /* Add value here */;
+    --tm-listbox-button-chevron-color: /* Add value here */;
+    --tm-listbox-disabled-background-color: /* Add value here */;
+    --tm-listbox-disabled-text-color: /* Add value here */;
+    --tm-selectbox-disabled-background-color: /* Add value here */;
+    --tm-selectbox-disabled-text-color: /* Add value here */;
+    --tm-textfield-background-color: /* Add value here */;
+    --tm-textfield-disabled-bg: /* Add value here */;
+    --tm-textfield-disabled-text-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/insert-table-picker */
+    --tm-insert-table-picker-label-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/menu */
+    --tm-menu-bg: /* Add value here */;
+    --tm-menu-shadow-color-end: /* Add value here */;
+    --tm-menu-shadow-color-start: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/menubar */
+    --tm-menubar-select-disabled-text-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/notification */
+    --tm-notification-error-bg: /* Add value here */;
+    --tm-notification-error-border-color: /* Add value here */;
+    --tm-notification-error-link-active-color: /* Add value here */;
+    --tm-notification-error-link-color: /* Add value here */;
+    --tm-notification-error-link-hover-color: /* Add value here */;
+    --tm-notification-info-bg: /* Add value here */;
+    --tm-notification-info-border-color: /* Add value here */;
+    --tm-notification-info-link-active-color: /* Add value here */;
+    --tm-notification-info-link-color: /* Add value here */;
+    --tm-notification-info-link-hover-color: /* Add value here */;
+    --tm-notification-success-bg: /* Add value here */;
+    --tm-notification-success-border-color: /* Add value here */;
+    --tm-notification-success-link-active-color: /* Add value here */;
+    --tm-notification-success-link-color: /* Add value here */;
+    --tm-notification-success-link-hover-color: /* Add value here */;
+    --tm-notification-warn-bg: /* Add value here */;
+    --tm-notification-warn-border-color: /* Add value here */;
+    --tm-notification-warn-link-active-color: /* Add value here */;
+    --tm-notification-warn-link-color: /* Add value here */;
+    --tm-notification-warn-link-hover-color: /* Add value here */;
+    --tm-notification-warn-text-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/onboarding */
+    --tm-onboarding-footer-bg: /* Add value here */;
+    --tm-onboarding-overlay-bg: /* Add value here */;
+    --tm-onboarding-promotion-button-bg: /* Add value here */;
+    --tm-onboarding-promotion-button-text-color: /* Add value here */;
+    --tm-onboarding-promotion-footer-bg: /* Add value here */;
+    --tm-onboarding-promotion-icon-bg-end: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/pop */
+    --tm-pop-shadow-color-end: /* Add value here */;
+    --tm-pop-shadow-color-start: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/revisionhistory */
+    --tm-rh-border-color: /* Add value here */;
+    --tm-rh-border-color--focused: /* Add value here */;
+    --tm-rh-border-color--selected: /* Add value here */;
+    --tm-rh-card-active-bg: /* Add value here */;
+    --tm-rh-secondary-color: /* Add value here */;
+    --tm-rh-sidebar-background-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/sidebar */
+    --tm-sidebar-bg: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/slider */
+    --tm-slider-handle-border-color: /* Add value here */;
+    --tm-slider-thumb-background-color-active: /* Add value here */;
+    --tm-slider-thumb-background-color-disabled: /* Add value here */;
+    --tm-slider-thumb-background-color-focus: /* Add value here */;
+    --tm-slider-thumb-background-color-hover: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/statusbar */
+    --tm-statusbar-logo-color: /* Add value here */;
+    --tm-statusbar-resize-handle-color: /* Add value here */;
+    --tm-statusbar-text-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/suggestededits */
+    --tm-se-button-hover-bg: /* Add value here */;
+    --tm-se-dark-transparent-color: /* Add value here */;
+    --tm-se-sidebar-bg: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/throbber */
+    --tm-throbber-busy-bg: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/toolbar-button */
+    --tm-toolbar-button-bespoke-bg: /* Add value here */;
+    --tm-toolbar-button-chevron-color: /* Add value here */;
+    --tm-toolbar-button-disabled-icon-color: /* Add value here */;
+    --tm-toolbar-button-disabled-text-color: /* Add value here */;
+    --tm-toolbar-button-enabled-background-color: /* Add value here */;
+    --tm-toolbar-button-hover-background-color: /* Add value here */;
+    --tm-toolbar-button-icon-color: /* Add value here */;
+    --tm-toolbar-button-text-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/components/tree */
+    --tm-tree-button-chevron-color: /* Add value here */;
+    --tm-tree-button-disabled-icon-color: /* Add value here */;
+    --tm-tree-button-disabled-text-color: /* Add value here */;
+    --tm-tree-button-enabled-background-color: /* Add value here */;
+    --tm-tree-button-icon-color: /* Add value here */;
+    --tm-tree-button-menu-icon-color: /* Add value here */;
+    --tm-tree-button-text-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/content/accessibility-checker */
+    --tm-accessibility-issue-error-selection-bg: /* Add value here */;
+    --tm-accessibility-issue-error-selection-color: /* Add value here */;
+    --tm-accessibility-issue-info-selection-bg: /* Add value here */;
+    --tm-accessibility-issue-info-selection-color: /* Add value here */;
+    --tm-accessibility-issue-warn-selection-bg: /* Add value here */;
+    --tm-accessibility-issue-warn-selection-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/content/comments */
+    --tm-doc-comment-active-bg: /* Add value here */;
+    --tm-doc-comment-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/content/mergetags */
+    --tm-mergetag-hover-bg: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/content/suggestededits */
+    --tm-added-bg: /* Add value here */;
+    --tm-modified-bg: /* Add value here */;
+    --tm-removed-bg: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/content/uploadcare */
+    --tm-uploadcare-placeholder-border-color: /* Add value here */;
+
+    /* Variables from: ./modules/oxide/src/less/theme-regal/globals */
+    --tm-background-color: /* Add value here */;
+    --tm-black-color: /* Add value here */;
+    --tm-border-color: /* Add value here */;
+    --tm-color-active: /* Add value here */;
+    --tm-color-error: /* Add value here */;
+    --tm-color-success: /* Add value here */;
+    --tm-color-tint: /* Add value here */;
+    --tm-color-warning: /* Add value here */;
+    --tm-color-white: /* Add value here */;
+    --tmn-color-error-element-focus-color: /* Add value here */;
+    --tm-separator-color: /* Add value here */;
+    --tm-text-color: /* Add value here */;
+    --tm-text-color-muted: /* Add value here */;
+}

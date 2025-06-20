@@ -2,10 +2,10 @@
 // Menu
 //
 
-@menu-background-color: contrast(@background-color, @background-color, lighten(@background-color, 5%));
+@menu-background-color: var(--tm-menu-bg);
 @menu-border-color: transparent;
 @menu-border-radius: @panel-border-radius;
-@menu-box-shadow: 0 0 2px 0 fade(@color-black, 20%), 0 4px 8px 0 fade(@color-black, 15%);
+@menu-box-shadow: 0 0 2px 0 var(--tm-menu-shadow-color-start), 0 4px 8px 0 var(--tm-menu-shadow-color-end);
 
 @menu-item-collection-list-padding: @pad-xs;
 @menu-item-collection-toolbar-padding: @pad-sm;

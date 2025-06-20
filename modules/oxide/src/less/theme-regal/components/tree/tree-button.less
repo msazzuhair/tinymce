@@ -7,16 +7,16 @@
 @tree-button-border-radius: 4px;
 @tree-button-border: 0;
 @tree-button-box-shadow: none;
-@tree-button-chevron-color: fade(@tree-button-icon-color, 50%);
+@tree-button-chevron-color: var(--tm-tree-button-chevron-color);
 @tree-button-font-size: @font-size-sm;
 @tree-button-font-style: normal;
 @tree-button-font-weight: @font-weight-normal;
 @tree-button-height: 28px;
-@tree-button-icon-color: contrast(@background-color, @color-white, @color-black);
-@tree-button-menu-icon-color: contrast(@tree-button-hover-background-color, @color-white, @color-black);
+@tree-button-icon-color: var(--tm-tree-button-icon-color);
+@tree-button-menu-icon-color: var(--tm-tree-button-menu-icon-color);
 @tree-button-spacing-x: 1px;
 @tree-button-spacing-y: 5px;
-@tree-button-text-color: contrast(@background-color, @color-white, @color-black);
+@tree-button-text-color: var(--tm-tree-button-text-color);
 @tree-button-text-transform: none;
 
 @tree-button-hover-background-color: @toolbar-button-hover-background-color;
@@ -38,7 +38,7 @@
 @tree-button-active-text-color: @tree-button-enabled-text-color;
 @tree-button-active-transform: none; // Set to `translateY(1px)` for a small push down effect
 
-@tree-button-enabled-background-color: multiply(white, contrast(@background-color, fade(@color-tint, 35), fade(@color-tint, 65)));
+@tree-button-enabled-background-color: var(--tm-tree-button-enabled-bg);
 @tree-button-enabled-border: @tree-button-hover-border;
 @tree-button-enabled-box-shadow: @tree-button-box-shadow;
 @tree-button-enabled-icon-color: @tree-button-hover-icon-color;
@@ -48,8 +48,8 @@
 @tree-button-disabled-background-color:  @tree-button-background-color;
 @tree-button-disabled-border: @tree-button-border;
 @tree-button-disabled-box-shadow: @tree-button-box-shadow;
-@tree-button-disabled-icon-color: fade(@tree-button-icon-color, 50%);
-@tree-button-disabled-text-color: fade(@tree-button-text-color, 50%);
+@tree-button-disabled-icon-color: var(--tm-tree-button-disabled-icon-color);
+@tree-button-disabled-text-color: var(--tm-tree-button-disabled-text-color);
 
 .tox .tox-tree {
   display: flex;

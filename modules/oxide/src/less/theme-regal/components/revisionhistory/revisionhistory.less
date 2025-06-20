@@ -3,15 +3,15 @@
 //
 @revisionhistory-gap: 12px;
 @revisionhistory-border-radius: 6px;
-@revisionhistory-dark-mode: boolean(luma(@background-color) < 3);
-@revisionhistory-secondary-color: contrast(@background-color, darken(@background-color, 6%), lighten(@background-color, 15%));
-@revisionhistory-sidebar-background-color: if(@revisionhistory-dark-mode, #2b3b4e, @revisionhistory-secondary-color);   // Trial and error
-@revisionhistory-border-color: if(@revisionhistory-dark-mode, rgba(255, 255, 255, .15), @revisionhistory-secondary-color);
+// @revisionhistory-dark-mode: boolean(luma(@background-color) < 3);
+@revisionhistory-secondary-color: var(--tm-rh-secondary-color);
+@revisionhistory-sidebar-background-color: var(--tm-rh-sidebar-bg);   // Trial and error
+@revisionhistory-border-color: var(--tm-rh-border-color);
 @revisionhistory-text-color: @text-color;
-@revisionhistory-card-active-background-color: if(@revisionhistory-dark-mode, #62430b, #fff5cc);
+@revisionhistory-card-active-background-color: var(--tm-rh-card-active-bg);
 @revisionhistory-border: 1px solid @revisionhistory-border-color;
-@revisionhistory-border-color--selected: if(@revisionhistory-dark-mode, #cea215, #e3b82a);
-@revisionhistory-border-color--focused: if(@revisionhistory-dark-mode, #285ec7, #006ce7);
+@revisionhistory-border-color--selected: var(--tm-rh-border-color--selected);
+@revisionhistory-border-color--focused: var(--tm-rh-border-color--focused);
 @revisionhistory-box-shadow: 0 4px 8px 0 rgba(34, 47, 62, .1);
 @revisionhistory-sidebar-minwidth: 248px;
 @revisionhistory-text-lineheight: 24px;

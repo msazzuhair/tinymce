@@ -7,22 +7,22 @@
 @toolbar-button-border-radius: 3px;
 @toolbar-button-border: 0;
 @toolbar-button-box-shadow: none;
-@toolbar-button-chevron-color: fade(@toolbar-button-icon-color, 50%);
+@toolbar-button-chevron-color: var(--tm-toolbar-button-chevron-color);
 @toolbar-button-chevron-width: @base-value;
 @toolbar-button-font-size: @font-size-sm;
 @toolbar-button-font-style: normal;
 @toolbar-button-font-weight: @font-weight-normal;
 @toolbar-button-height: 28px;
-@toolbar-button-icon-color: contrast(@background-color, @color-white, @color-black);
+@toolbar-button-icon-color: var(--tm-toolbar-button-icon-color);
 @toolbar-button-spacing-x: 1px;
 @toolbar-button-spacing-y: 5px;
-@toolbar-button-text-color: contrast(@background-color, @color-white, @color-black);
+@toolbar-button-text-color: var(--tm-toolbar-button-text-color);
 @toolbar-button-text-transform: none;
 @toolbar-button-width: 34px;
 @toolbar-button-margin: (@toolbar-button-spacing-y + 1px) @toolbar-button-spacing-x @toolbar-button-spacing-y 0;
 @toolbar-button-padding: 0;
 
-@toolbar-button-hover-background-color: contrast(@background-color, darken(@background-color, 6%), lighten(@background-color, 7%)); // Differentiating against the enabled color
+@toolbar-button-hover-background-color: var(--tm-toolbar-button-hover-bg); // Differentiating against the enabled color
 @toolbar-button-hover-border: @toolbar-button-border;
 @toolbar-button-hover-box-shadow: @toolbar-button-box-shadow;
 @toolbar-button-hover-icon-color: @toolbar-button-icon-color;
@@ -41,7 +41,7 @@
 @toolbar-button-active-text-color: @toolbar-button-enabled-text-color;
 @toolbar-button-active-transform: none; // Set to `translateY(1px)` for a small push down effect
 
-@toolbar-button-enabled-background-color: multiply(white, contrast(@background-color, fade(@color-tint, 35), fade(@color-tint, 65)));
+@toolbar-button-enabled-background-color: var(--tm-toolbar-button-enabled-bg);
 @toolbar-button-enabled-border: @toolbar-button-hover-border;
 @toolbar-button-enabled-box-shadow: @toolbar-button-box-shadow;
 @toolbar-button-enabled-icon-color: @toolbar-button-hover-icon-color;
@@ -51,8 +51,8 @@
 @toolbar-button-disabled-background-color: @toolbar-button-background-color;
 @toolbar-button-disabled-border: @toolbar-button-border;
 @toolbar-button-disabled-box-shadow: @toolbar-button-box-shadow;
-@toolbar-button-disabled-icon-color: fade(@toolbar-button-icon-color, 50%);
-@toolbar-button-disabled-text-color: fade(@toolbar-button-text-color, 50%);
+@toolbar-button-disabled-icon-color: var(--tm-toolbar-button-disabled-icon-color);
+@toolbar-button-disabled-text-color: var(--tm-toolbar-button-disabled-text-color);
 
 .tox {
   .tox-tbtn {

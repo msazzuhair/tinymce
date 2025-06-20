@@ -2,16 +2,16 @@
 // Dialog
 //
 
-@dialog-backdrop-background-color: fade(@background-color, 75);
+@dialog-backdrop-background-color: var(--tm-dialog-backdrop-bg);
 @dialog-backdrop-background-color-opaque: @background-color;
 
-@dialog-background-color: contrast(@background-color, @background-color, lighten(@background-color, 5%));
+@dialog-background-color: var(--tm-dialog-bg);
 @dialog-busy-backdrop-background-color: @dialog-backdrop-background-color;
 
 @dialog-border-color: @border-color;
 @dialog-border-radius: 10px;
 @dialog-border-width: 0;
-@dialog-box-shadow: 0 16px 16px -10px fade(@color-black, 15%), 0 0 40px 1px fade(@color-black, 15%);
+@dialog-box-shadow: 0 16px 16px -10px var(--tm-dialog-shadow-color), 0 0 40px 1px var(--tm-dialog-shadow-color);
 
 @dialog-header-background-color: @dialog-background-color;
 @dialog-header-padding: @pad-sm @pad-md 0 @pad-md;
@@ -39,11 +39,11 @@
 @dialog-body-text-color: @text-color;
 @dialog-body-text-transform: none;
 
-@dialog-body-link-color: contrast(@background-color, mix(@color-white, @color-tint, 50%), mix(@color-black, @color-tint, 60%));
+@dialog-body-link-color: var(--tm-dialog-link-color);
 @dialog-body-link-text-decoration: underline;
-@dialog-body-link-hover-color: darken(@dialog-body-link-color, 20%);
+@dialog-body-link-hover-color: var(--tm-dialog-link-hover-color);
 @dialog-body-link-hover-text-decoration: underline;
-@dialog-body-link-active-color: darken(@dialog-body-link-color, 30%);
+@dialog-body-link-active-color: var(--tm-dialog-link-active-color);
 @dialog-body-link-active-text-decoration: underline;
 @dialog-body-link-focus-outline-color: @dialog-body-link-color;
 @dialog-body-link-focus-outline-border-radius: 1px;
@@ -62,8 +62,8 @@
 @dialog-body-h2-text-color: @text-color;
 @dialog-body-h2-text-transform: none;
 
-@dialog-table-border-color: darken(@border-color, 55%);
-@dialog-nav-focus-background-color: fade(@color-tint, 10%);
+@dialog-table-border-color: var(--tm-dialog-table-border-color);
+@dialog-nav-focus-background-color: var(--tm-dialog-nav-focus-bg);
 @dialog-tab-max-width: 13em;
 @dialog-tab-column-max-width: 11em;
 
